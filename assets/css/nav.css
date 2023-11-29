@@ -254,14 +254,15 @@ hr{
     border-radius: 20px;
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
 }
 .cont-esq{
-    width: 70%;
+    width: 85%;
     height: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 30px;
+    margin: 15px;
     font-family: 'Handlee', cursive;
     font-size: 2.2vh;
     letter-spacing: 5px;
@@ -278,7 +279,7 @@ input {
 label{
     font-size: 18px;
     margin: 1vw;
-    width: 225px;
+    width: 200px;
     letter-spacing: 1vw;
 }
 textarea{
@@ -330,7 +331,7 @@ form{
     margin: 10px;
 }
 #limpar{
-    margin-left: 16vw;
+    margin-left: 18vw;
     margin-top: 2vh;
     width: 12vw;
     height: 6vh;

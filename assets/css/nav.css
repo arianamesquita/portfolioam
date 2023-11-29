@@ -330,7 +330,7 @@ form{
     margin: 10px;
 }
 #limpar{
-    margin-left: 18vw;
+    margin-left: 16vw;
     margin-top: 2vh;
     width: 12vw;
     height: 6vh;
@@ -374,4 +374,18 @@ form{
 .p1-end-h1{
     font-size: 2.5vh;
     margin-top: 2vh;
+}
+.inicial{
+    display: flex;
+    flex-direction: column;
+}
+.inicial img{
+    width: 30%;
+}
+.inicial h1, h2{
+    font-family: 'Courier New', Courier, monospace;
+    width: 90%;
+    background-color: #bbbadb;
+    border-radius: 15px;
+    padding: 30px;
 }

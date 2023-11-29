@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+body{
+    background-image: url(../images/background.png);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#menu{
+    width: 10vw;
+    display: flex;
+    padding: 20px 20px;
+    height: 100%;
+    z-index: 3;
+}
+.container{
+    height: 100%;
+    transition: .3s;
+    background-color: #343030;
+    width: 80px;
+    padding: 20px 0;
+    box-shadow: 8px 0px 9px 0px #00000014;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+}
+.ul-menu li{
+    list-style: none;
+    border-radius: 0px 50px 50px 0;
+    transition: .3s;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(213, 213, 213);
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.list{
+    background: #0c0c0c;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 8px;
+}
+li :hover{
+    background: #0c0c0c;
+}
+li span:nth-child(2){
+    display: none;
+}
+#menu :hover{
+    width: 240px;
+}
+#menu :hover li span:nth-child(2){
+    display: block;
+}
+#menu :hover img:nth-child(1){
+    width: 45px;
+}
+header{
+    width: 100vw;
+    display: flex;
+
+}
+main{
+    position: absolute;
+    margin: 20vh;
+    margin-left: 15vw;
+    width: 82vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+#menu :hover body{
+    background-color: rgba(169, 169, 169, 0.815);
+}
+hr{
+    width: 83vw;
+    border: .3vh dashed #616095;
+}
+#header{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding: 2vh;
+    gap: 2vh;
+}
+.buttons button{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: none;
+    background-color: #CDCACA;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5vh;
+}
+.text-1 {
+    background-color: #6c6c6c7f;
+    font-family: 'Handlee', cursive;
+    font-style: italic;
+    font-size: 2.2vh;
+    letter-spacing: 5px;
+    padding: 2vh;
+    border-radius: 2vh;
+    width: 95%;
+}
+.text-2 {
+    background-color: #b092adc3;
+    font-family: 'Handlee', cursive;
+    font-size: 2.2vh;
+    letter-spacing: 5px;
+    padding: 2vh;
+    border-radius: 2vh;
+    width: 100%;
+    text-align: justify;
+}
+.left{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 2vh;
+    gap: 5vh;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vh;
+    padding: 2vh;
+    font-family: 'Handlee';
+}
+.mainimg{
+    width: 80%;
+}
+.enun{
+    font-family: 'Handlee', cursive;
+    font-size: 3vh;
+    letter-spacing: 8px;
+    padding: 2vh;
+}
+.text-li{
+    background-color: #b092adc3;
+    font-family: 'Handlee', cursive;
+    font-size: 2.2vh;
+    letter-spacing: 5px;
+    padding: 2vh;
+    border-radius: 2vh;
+    width: 80%;
+    text-align: left;
+    padding-left: 5vw;
+}
+.left-arq{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.sup-esq{
+    width: 40vw;
+    height: 40vh;
+    border-radius: 15px;
+    background-color: #939392;
+}
+.sup-dir{
+    width: 35vw;
+}
+.sup-dir img{
+    width: 100%;
+}
+.inf-esq{
+    background-color: #cbc5c5;
+    width: 65%;
+    height: 50vh;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+.inf-dir{
+    background-color: #956089b0;
+    width: 25vw;
+    height: 50vh;
+    font-family: 'Handlee', cursive;
+    font-size: 2.2vh;
+    letter-spacing: 5px;
+    padding: 2vh;
+    border-radius: 2vh;
+    margin-top: 2vh;
+}
+.whitetext{
+    font-family: 'Handlee', cursive;
+    font-size: 3vh;
+    letter-spacing: 5px;
+    padding: 2vh;
+    color: #ffffff;
+}
+.arq-li{
+    font-family: 'Handlee', cursive;
+    font-size: 2.2vh;
+    letter-spacing: 5px;
+    padding: 2vh;
+    border-radius: 2vh;
+    width: 100%;
+    text-align: left;
+    padding-left: 5vw;
+}
+.seta-esq{
+    border: none;
+    rotate: 180deg;
+    background-color: #cbc5c5;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.seta-dir{
+    border: none;
+    background-color: #cbc5c5;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.img-arq{
+    width: 60%;
+    padding: 15px;
+}
+.contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #b092adc1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.cont-esq{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    font-family: 'Handlee', cursive;
+    font-size: 2.2vh;
+    letter-spacing: 5px;
+    padding: 2vh;
+}
+input {
+    width: 28vw;
+    margin: 1vw;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d6d4d4;
+}
+label{
+    font-size: 18px;
+    margin: 1vw;
+    width: 225px;
+    letter-spacing: 1vw;
+}
+textarea{
+    margin-top: 2vh;
+    width: 29vw;
+    height: 250px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d6d4d4;
+    justify-content: end;
+}
+.carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 0;
+    transition: all 0.25s ease-in;
+}
+.carousel .item-list {
+    max-width: 550px;
+    width: 100%;
+    padding: 30px 10px;
+    display: flex;
+    gap: 48px;  
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    transition: all 0.25s ease-in;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+.item-list::-webkit-scrollbar {
+    display: none;
+}  
+.item {
+    scroll-snap-align: center;
+    min-width: 300px;
+    height: 300px;
+    border-radius:8px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.p1-contato{
+    font-size: 24px;
+    margin: 10px;
+}
+#limpar{
+    margin-left: 18vw;
+    margin-top: 2vh;
+    width: 12vw;
+    height: 6vh;
+    background-color: #EAB394;
+}
+#enviar{
+    margin-top: 2vh;
+    width: 12vw;
+    height: 6vh;
+    background-color: #B6E9A4;
+}
+.cont-dir{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    font-family: 'Handlee', cursive;
+    font-size: 1.6vh;
+    letter-spacing: 5px;
+    padding: 2vh;
+    align-items: start;
+    justify-content: space-between;
+}
+.mark-icon{
+    height: 50px;
+    margin: 10px;
+    margin-top: 12vh;
+}
+.icon-cont{
+    height: 20px;
+    margin: 1vh;
+}
+.p1-end{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.p1-end-h1{
+    font-size: 2.5vh;
+    margin-top: 2vh;
+}

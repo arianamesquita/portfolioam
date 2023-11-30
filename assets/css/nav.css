@@ -394,7 +394,7 @@ form{
     display: flex;
 }
 
-@media only screen and (max-width: 1000px)  {
+@media (min-width: 250px) and (max-width: 900px) {
     
     .button-cad p, .button-user p{
         display: none;

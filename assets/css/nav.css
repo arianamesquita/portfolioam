@@ -390,3 +390,84 @@ form{
     border-radius: 15px;
     padding: 30px;
 }
+.container-apres{
+    display: flex;
+}
+
+@media only screen and (max-width: 1000px)  {
+    
+    .button-cad p, .button-user p{
+        display: none;
+    }
+    .buttons {
+        width: 40%;
+        margin-right: 120px;
+    }
+    .logomarca{
+        width: 30vw;
+    }
+    .inicial{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: end;
+        margin-right: 5vw;
+    }
+    .inicial img{
+        width: 30vw;
+    }
+    .inicial h1, h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+        width: 70%;
+        background-color: #bbbadb;
+        border-radius: 15px;
+        padding: 30px;
+    }
+    .container-apres{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 80px;
+    }
+    .left{
+        width: 100%;
+    }
+    .text-1{
+        font-size: small;
+        width: 70vw;
+    }
+    .text-2{
+        font-size: small;
+        width: 70vw;
+    }
+    .right{
+        width: 100%;
+    }
+    .left-arq{
+        width: 100%;
+    }
+    .enun{
+        font-size: medium;
+        text-align: center;
+        width: 70vw;
+    }
+    .right-arq{
+        width: 100%;
+         
+    }
+    .text-li{
+        font-size: small;
+        margin-left: 80px;
+        width: 70vw;
+    }
+    .right-arq img{
+        height: 50vh;
+    }
+    .whitetext{
+        font-size: medium;
+    }
+    .arq-li{
+        font-size: small;
+    }
+}

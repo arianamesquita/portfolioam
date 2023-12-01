@@ -86,7 +86,7 @@ main{
     background-color: rgba(169, 169, 169, 0.815);
 }
 hr{
-    width: 80vw;
+    width: 75vw;
     border: .3vh dashed #616095;
 }
 #header{
@@ -398,15 +398,16 @@ form{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: .5rem;
-    border-radius: 2em;
-    padding: 2em;
-    background: hsla(342, 5%, 36%, 1);
-    background: hsla(345, 37%, 47%, 1);
-    background: linear-gradient(135deg, hsla(345, 37%, 47%, 1) 0%, hsla(202, 92%, 77%, 1) 100%);
-    background: -moz-linear-gradient(135deg, hsla(345, 37%, 47%, 1) 0%, hsla(202, 92%, 77%, 1) 100%);
-    background: -webkit-linear-gradient(135deg, hsla(345, 37%, 47%, 1) 0%, hsla(202, 92%, 77%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A54C62", endColorstr="#8ED2FA", GradientType=1 );
+}
+.dots{
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
 }
 .card .photo{
     width: 20em;
@@ -415,7 +416,7 @@ form{
 }
 .title-card{
     font-size: 2em;
-    text-align: center;
+    text-align: start;
     font-family: "Handlee", cursive;
     color: rgb(21, 12, 31);
 }
@@ -459,9 +460,104 @@ form{
     background-image: url('/assets/images/svg/email.svg');
     background-repeat: no-repeat;
 }
+.card-frame{
+    display: flex;
+    flex-direction: column;
+    background: hsla(342, 5%, 36%, 1);
+    background: hsla(345, 37%, 47%, 1);
+    background: linear-gradient(135deg, hsla(345, 37%, 47%, 1) 0%, hsla(202, 92%, 77%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(345, 37%, 47%, 1) 0%, hsla(202, 92%, 77%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(345, 37%, 47%, 1) 0%, hsla(202, 92%, 77%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A54C62", endColorstr="#8ED2FA", GradientType=1 );
+    margin: .5rem;
+    border-radius: 2em;
+    padding: 2em;
+    position: relative;
+}
+.acordeon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #060608;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    transition: .25s;
+}
+.acordeon .content-ac{
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+.acordeon .trigger{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: none;
+}
+.acordeon.open,
+.acordeon:hover{
+    background-color: #55569E;
+    border-color: #55569E;
+    border-radius: 1rem;
+    color: #fff;
+}
+.acordeon .trigger:hover{
+    cursor: pointer;
+    color: white;
+}
+.acordeon .trigger::after{
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/images/svg/arrow-up.svg');
+    color: #fff;
+    transition: .25s;
+}
+.acordeon.open .trigger::after{
+    transform: rotateX(180deg);
+}
+.acordeon.open .content-ac{
+    display: block;
+    height: auto;
+    opacity: 1;
+}
+.languages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;   
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content:space-around;
+}
+.languages li{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+}
+.languages li::before{
+    content: "";
+    display: block;
+    width: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/images/svg/ok.svg');
+    margin-right: .5rem;
+}
+
 
 @media (min-width: 250px) and (max-width: 900px) {
-    
     .button-cad p, .button-user p{
         display: none;
     }
@@ -550,7 +646,7 @@ form{
         border-radius: 50%;
     }
     hr{
-        width: 15em;
+        width: 70vw;
     }
     .title-card{
         font-size: 1em;
@@ -581,5 +677,22 @@ form{
         background-size: contain;
         margin-right: .5rem;
         transform: scale(.3);
+    }
+    .dots{
+        width: 3rem;
+        height: 3rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: .5rem;
+        position: absolute;
+        top: .1rem;
+        right: .2rem;
+    }
+    .languages li{
+        font-size: medium;
+        font-weight: 300;
+    }
+    .acordeon .trigger{
+        font-size: 1rem;
     }
 }

@@ -4,6 +4,5 @@ function carregarConteudo(arquivo) {
         .then(data => {
             document.getElementById('main').innerHTML = data;
         });
-    
     return false;
 }

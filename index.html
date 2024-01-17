@@ -21,7 +21,7 @@
         <img src="assets/images/logomarca.png" alt="" class="logomarca">
         <div id="header">
             <script>
-                fetch('/shared/header.html')
+                fetch('shared/header.html')
                     .then(response => response.text())
                     .then(data => {
                         document.getElementById('header').innerHTML = data;
@@ -31,7 +31,7 @@
     </header>
     <nav id="menu">
         <script>
-            fetch('/shared/menu.html')
+            fetch('shared/menu.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('menu').innerHTML = data;

@@ -445,19 +445,19 @@ form{
     margin-right: .5rem;
 }
 .information .job{
-    background-image: url('/assets/images/svg/user.svg');
+    background-image: url('assets/images/svg/user.svg');
     background-repeat: no-repeat;
 }
 .information .location{
-    background-image: url('/assets/images/svg/map.svg');
+    background-image: url('assets/images/svg/map.svg');
     background-repeat: no-repeat;
 }
 .information .phone{
-    background-image: url('/assets/images/svg/call.svg');
+    background-image: url('assets/images/svg/call.svg');
     background-repeat: no-repeat;
 }
 .information .email{
-    background-image: url('/assets/images/svg/email.svg');
+    background-image: url('assets/images/svg/email.svg');
     background-repeat: no-repeat;
 }
 .card-frame{
@@ -518,7 +518,7 @@ form{
     height: 1.5rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/assets/images/svg/arrow-up.svg');
+    background-image: url('assets/images/svg/arrow-up.svg');
     color: #fff;
     transition: .25s;
 }
@@ -552,7 +552,7 @@ form{
     width: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/assets/images/svg/ok.svg');
+    background-image: url('assets/images/svg/ok.svg');
     margin-right: .5rem;
 }
 .portfolio{
@@ -586,7 +586,7 @@ form{
     height: 1.2rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/assets/images/svg/github.svg');
+    background-image: url('assets/images/svg/github.svg');
     margin-right: .5rem;
     background-color: #B6E9A4;
 }
@@ -638,7 +638,7 @@ form{
     height: 1.2rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/assets/images/svg/calendar.svg');
+    background-image: url('assets/images/svg/calendar.svg');
     margin-right: .5rem;
     background-color: #d38d24;
 }

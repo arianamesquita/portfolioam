@@ -664,6 +664,7 @@ form{
 }
 .skills .tools ul li img{
     max-width: 50px;
+    max-height: 50px;
     margin: .5rem;
 }
 .skills .personal ul{
